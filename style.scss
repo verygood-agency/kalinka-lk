@@ -323,5 +323,102 @@
     width: 30px;
     height: 30px;
     margin-bottom: 6px;
+  }
 }
+
+// ИЗБРАННОЕ
+.favorite {
+  .catalog__header-title {
+    margin-top: 0;
+    margin-bottom: 31px;
+  }
+}
+.crumbs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &::before {
+      display: none;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: var(--bardeau, #b1191e);
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.39px;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: calc(5px + 8px);
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+    &::before {
+      content: "";
+      width: 7px;
+      height: 13px;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M7 1L2 6L7 11' stroke='%23B1191E' stroke-width='2'/%3e%3c/svg%3e ");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 0;
+      top: 1px;
+      flex-shrink: 0;
+      margin-right: 8px;
+    }
+  }
+}
+
+.add-button {
+  color: #b1191e !important;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.39px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid rgba(177, 25, 30, 0.30);
+  padding: 16px;
+  height: 50px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 12px 1fr;
+  max-width: max-content;
+  margin: 0 auto;
+  gap: 8px;
+  align-items: center;
+  text-decoration: none !important;
+  span {
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #b1191e !important;
+  }
+}
+
+.favorite__header {
+  margin-bottom: 42px;
+}
+
+.favorite__message {
+  text-align: center;
+  max-width: max-content;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  font-size: 18px;
 }
