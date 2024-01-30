@@ -302,4 +302,19 @@
   .personal-manager__photo {
     max-width: 375px;
   }
+  .partnes-account__first-title {
+    font-size: 21px;
+  }
+  .partnes-account__header {
+    min-height: 240px;
+    margin-bottom: 16px;
+  }
+  .main {
+    margin-top: 40px !important;
+  }
+  .profile__nav-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 6px;
+  }
 }
